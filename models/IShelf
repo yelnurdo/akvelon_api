@@ -1,0 +1,13 @@
+using System.Collections.Generic;
+
+namespace BookShelfApi.Models
+{
+    public interface IProductRepository
+    {
+        IEnumerable<Book> GetAll();
+        Product Get(int id);
+        Product Add(Book item);
+        void Remove(int id);
+        bool Update(Book item);
+    }
+}
